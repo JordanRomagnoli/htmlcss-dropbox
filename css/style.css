@@ -39,6 +39,14 @@
     width: 60%;
 }
 
+.my_col_1-4{
+    width: 30%;
+}
+
+.my_col_3-4{
+    width: 70%;
+}
+
 .top-header a{
     text-decoration: none;
     color: black;
@@ -60,6 +68,23 @@ a.button{
     text-decoration: none;
 }
 
+
+h3{
+    font-size: 1.8em;
+}
+
+.button-card{
+    text-align: center;
+}
+
+.button-card > a{
+    color: white;
+    padding: 10px 10px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0061ff;
+    width: 100%;
+}
 /*
     HEADER
 */
@@ -163,6 +188,7 @@ main .input-box > span:nth-child(2){
 main .my_row{
     justify-content: space-between;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 main .my_row > .card{
@@ -170,7 +196,7 @@ main .my_row > .card{
     border: 1px solid lightgray;
 }
 
-.my_row > .card > .card-top{
+.card-top{
     text-align: center;
     padding: 10px 0;
     border-bottom: 1px solid lightgray;
@@ -180,9 +206,6 @@ main .my_row > .card{
     padding: 40px 20px;
 }
 
-.card > .card-bottom > h3{
-    font-size: 1.8em;
-} 
 
 .card > .card-bottom > h3, .card > .card-bottom > h4{
     margin-bottom: 20px;
@@ -197,63 +220,82 @@ main .my_row > .card{
     margin-top: 40px;
 }
 
-.card-bottom > ul > li{
+.card .card-bottom > ul > li{
     display: inline-block;
     margin-bottom: 20px;
 }
 
-.card-bottom > .button-card{
-    text-align: center;
+.card .card-bottom > .button-card{
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
-.card-bottom > .button-card > a{
-    color: white;
-    padding: 10px 10px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: #0061ff;
-    width: 100%;
-}
-
-.card-bottom > hr{
+.card .card-bottom > hr{
     width: 20%;
     margin-top: 40px;
     margin-bottom: 40px;
     border: 1px solid lightgrey;
 }
 
-.card-bottom > .list-info .fa-ul{
+.card .card-bottom > .list-info .fa-ul{
     --fa-li-margin: 1.5em;
 }
 
-.card-bottom > .list-info li{
+.card .card-bottom > .list-info li{
     margin-bottom: 20px;
 }
 
-.card-bottom > .list-info li i{
+.card .card-bottom > .list-info li i{
     color: #0061ff;
 }
 
+.horizontal_card{
+    width: 100%;
+    margin-top: 70px;
+    border: 1px solid lightgrey;
+}
 
+.horizontal_card > .card-bottom{
+    padding: 30px;
+}
 
+.horizontal_card > .card-bottom h3{
+    margin-bottom: 20px;
+}
 
+.horizontal_card > .card-bottom h4{
+    margin-bottom: 100px;
+}
 
-
+.horizontal_card > .card-bottom > .my_col_3-4{
+    padding-top: 20px;
+}
 /*
     DEBUG
 */
+
+/* .debug .horizontal_card .my_col_3-4, .debug .horizontal_card .my_col_1-4{
+    border: 1px dashed red;
+} */
+
+/* .horizontal_card .card-bottom{
+    min-height: 300px;
+} */
+
+/* .debug .horizontal_card{
+    min-height: 300px;
+    border: 1px dashed black;
+} */
 
 
 /* .debug .card > .card-top{
     border-bottom: 1px dashed black;
 } */
 
-.debug > main .my_row{
-    /* border: 1px dashed black; */
-    min-height: 800px;
-}
+/*  .debug > main .my_row{
+    border: 1px dashed black;
+    min-height: 800px; 
+} */
 
 /* .debug > main .card{
     border: 1px dashed red;
