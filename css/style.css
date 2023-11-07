@@ -17,6 +17,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.flex{
+    display: flex;
+}
+
 .container-large{
     max-width: 1200px;
     margin: 0 auto;
@@ -27,73 +31,199 @@
     margin: 0 auto;
 }
 
+.my_col_1-3{
+    width: 40%;
+}
+
+.my_col_2-3{
+    width: 60%;
+}
+
+
+
+.top-header a{
+    text-decoration: none;
+    color: black;
+}
+
+.button{
+   display: inline-block;
+   padding: 3px 10px;
+   background-color: #0061ff;
+   border: 1px solid #0061ff; 
+}
+
+.large{
+    padding: 10px 10px; 
+ }
+
+a.button{
+    color: white;
+    text-decoration: none;
+}
+
 /*
     HEADER
 */
+
+
+
+/* TOP HEADER */
+
+.top-header > *{
+    width: 50%;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+
+.left  ul > li, .right  ul > li{
+    display: inline-block;
+}
+
+.left  ul > li, .left > .img_container, .right  ul > li{
+    padding: 0 15px;
+}
 
 .top-header ul{
     list-style: none;
 }
 
-/* TOP HEADER */
-
-.top-header{
-    display: flex;
+.top-header .left > .img_container > img{
+    height: 20px;
 }
 
-.top-header > *{
-    width: 50%;
-    display: flex;
+.top-header .right{
+    justify-content: flex-end;
 }
+
+
+
+
+
 
 /* BOTTOM HEADER */
 
 .bottom-header > .background{
-    background-color: lightskyblue;
+    background-color: #b4d0e7;
+    padding-bottom: 15px;
 }
 
-header > .bottom-header .my_row{
-    display: flex;
+header > .bottom-header .jumbotron{
+    padding-top: 70px;
 }
 
-header > .bottom-header .my_row > .my_col_1-3{
-    width: 40%;
+.bottom-header .jumbotron h1{
+    font-size: 3.9em;
 }
 
-header > .bottom-header .my_row > .my_col_2-3{
-    width: 60%;
+.bottom-header .my_col_1-3{
+    padding: 0 20px 10px 0;
+    position: relative;
 }
+
+.bottom-header .my_col_1-3 > .button{
+    margin: 30px 0; 
+}
+
+.bottom-header .my_col_1-3 > i{
+    position: absolute;
+    left: 0;
+    bottom: 75px;
+    font-size: 2.8em;
+    font-weight: bolder;
+}
+
+.my_col_2-3 > img{
+    width: 100%;
+}
+
+.debug .bottom-header .my_row{
+    position: relative;
+    top: 80px;
+    margin-top: -35px;
+}
+
+
+
+
+
+/*
+    MAIN 
+*/
+
+main{
+    padding-top: 150px;
+}
+
+main h2{
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+
+main .input-box input{
+    margin: 3px;
+}
+
+main .input-box > span:nth-child(2){
+    margin-left: 20px;
+}
+
+main .my_row{
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+main .card{
+    width: calc(90% / 3);
+}
+
 
 /*
     DEBUG
 */
 
-.debug .top-header{
+.debug > main .my_row{
+    border: 1px dashed black;
+    min-height: 800px;
+}
+
+.debug > main .card{
+    border: 1px dashed red;
+}
+
+
+
+
+
+/* .debug .top-header{
     min-height: 80px;
     border: 1px dashed red;
 }
 
 .debug .top-header > *{
     border: 0.5px solid black;
-}
+} */
 
-.debug .background{
+/* .debug .background{
     min-height: 600px;
-}
+} */
 
-.debug .bottom-header .jumbotron{
+/* .debug .bottom-header .jumbotron{
     border: 1px dashed black;
-}
+} */
 
-.debug .bottom-header .my_row{
-    min-height: 300px;
-    border: 1px dashed red;
-}
+/* .debug .bottom-header .my_row{
+    /* min-height: 300px;
+    border: 1px dashed red; 
+} */
 
-.debug .bottom-header .my_row > .my_col_1-3{
+/* .debug .bottom-header .my_row > .my_col_1-3{
     background-color: blue;
-}
+} */
 
-.debug .bottom-header .my_row > .my_col_2-3{
+/* .debug .bottom-header .my_row > .my_col_2-3{
     background-color: red;
-}
+} */
