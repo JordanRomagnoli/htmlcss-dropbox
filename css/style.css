@@ -47,6 +47,14 @@
     width: 70%;
 }
 
+.my_col_1-6{
+    width: calc(90% / 6);
+}
+
+.card{
+    width: calc(90% / 3);
+}
+
 .top-header a{
     text-decoration: none;
     color: black;
@@ -73,6 +81,10 @@ h3{
     font-size: 1.8em;
 }
 
+h2{
+    font-size: 1.5em;
+}
+
 .button-card{
     text-align: center;
 }
@@ -84,6 +96,43 @@ h3{
     text-decoration: none;
     background-color: #0061ff;
     width: 100%;
+}
+
+.button-card > .white{
+    color: black;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    width: 100%;
+}
+
+.button.large.trasparent{
+   background-color: transparent;
+   border: 1px solid black;
+   color: black;
+}
+
+.square_1-2{
+    width: 50%;
+    height: 50%;
+}
+
+.bordeaux{
+    background-color: #61082b;
+}
+
+.lightgreen{
+    background-color: #a2d39b;
+    border: 20px solid #d1e9cd;
+}
+
+.orangered{
+    background-color: #ff1c1c;
+}
+
+.skyblue{
+    background-color: #0093ce;
 }
 /*
     HEADER
@@ -132,6 +181,7 @@ header > .bottom-header .jumbotron{
 
 .bottom-header .jumbotron h1{
     font-size: 3.9em;
+    font-weight: 800;
 }
 
 .bottom-header .my_col_1-3{
@@ -192,7 +242,6 @@ main .my_row{
 }
 
 main .my_row > .card{
-    width: calc(90% / 3);
     border: 1px solid lightgray;
 }
 
@@ -237,6 +286,10 @@ main .my_row > .card{
     border: 1px solid lightgrey;
 }
 
+.card-bottom > .list-info > h4{
+    margin-bottom: 20px;
+}
+
 .card .card-bottom > .list-info .fa-ul{
     --fa-li-margin: 1.5em;
 }
@@ -264,15 +317,190 @@ main .my_row > .card{
 }
 
 .horizontal_card > .card-bottom h4{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .horizontal_card > .card-bottom > .my_col_3-4{
     padding-top: 20px;
 }
+
+main .my_row.big{
+    margin: 180px 0;
+}
+
+main .my_row > .my_col_1-3{
+    padding: 50px 30px 0 30px;
+}
+
+main .my_row > .my_col_1-3 > h3{
+    margin-bottom: 20px;
+}
+
+main .my_row > .my_col_1-3 > p{
+    margin-bottom: 30px;
+}
+
+.my_row_1-3{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 180px;
+}
+
+.my_row_1-3 > .card{
+    margin-bottom: 50px;
+}
+
+.my_row_1-3 > .card > img{
+    width: 100%;
+}
+
+.my_row_1-3 > .card > h3{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.my_row_square{
+    height: calc(100vw / 3);
+    margin-top: 150px;
+}
+
+.my_row_square > *{
+    width: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my_row_square .square_1-2{
+    justify-content: center;
+    align-items: center;
+}
+
+.my_row_square .square_1-2 > img{
+    width: 50%;
+    filter: invert(100%);
+}
+
+.my_row_square > .corp_info{
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+.my_row_square > .corp_info > img{
+    width: 50%;
+}
+
+.my_row_square > .corp_info > p{
+    margin: 20px 0;
+}
+
+main > .background{
+    background-color: #b4d0e7;
+    margin-bottom: 180px;
+}
+
+.my_row.small{
+    margin: 0;
+    padding: 100px 0;
+}
+
+.my_row.small > *{
+    align-items: center;
+    justify-content: center;
+}
+
+.my_row.small h2{
+    margin: 0;
+    color: #61082b;
+}
+
+.row-box{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-bottom: 180px;
+}
+
+.row-box > div:nth-child(2){
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.row-box > *{
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.row-box h4{
+    font-size: 1.1em;
+}
+
+.row-box a{
+    color: black;
+    text-decoration: none;
+    font-size: small;
+}
+
+/*
+    FOOTER
+*/
+
+footer{
+    background-color: black;
+}
+
+footer *{
+    color: white;
+}
+
+.footer-top ul{
+    list-style: none;
+}
+
+.footer-top ul a{
+    text-decoration: none;
+}
 /*
     DEBUG
 */
+
+.footer-top .my_col_1-6{
+    border: 1px dashed white;
+}
+
+.footer-top > .my_row{
+    min-height: 300px;
+    border: 1px dashed white;
+}
+
+/* .debug .row-box{
+    min-height: 400px;
+} */
+
+/* .my_row.small{
+    min-height: 500px;
+} */
+
+/* .my_row_square > div > *{
+    border: 1px dashed blue;
+} */
+
+/* .my_row_square > *{
+    border: 1px dashed black;
+} */
+
+/* .my_row_square{
+    border: 1px dashed red;
+} */
+
+/* .my_row_1-3 > .card{
+    border: 1px dashed black;
+    margin-bottom: 50px;
+} */
+
+/* .my_row_1-3{
+    min-height: 800px;
+    border: 1px dashed red;
+} */
 
 /* .debug .horizontal_card .my_col_3-4, .debug .horizontal_card .my_col_1-4{
     border: 1px dashed red;
