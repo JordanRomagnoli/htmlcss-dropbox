@@ -157,6 +157,15 @@ h2{
 
 /* TOP HEADER */
 
+.top-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+}
+
 .top-header > *{
     width: 50%;
     align-items: center;
@@ -185,6 +194,10 @@ h2{
 
 
 /* BOTTOM HEADER */
+
+.bottom-header{
+    margin-top: 60px;
+}
 
 .bottom-header > .background{
     background-color: #b4d0e7;
