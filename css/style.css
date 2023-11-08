@@ -134,6 +134,22 @@ h2{
 .skyblue{
     background-color: #0093ce;
 }
+
+.red{
+    background-color: #d5001f;
+}
+
+.lightblue{
+    background-color: #b4d0e7;
+}
+
+.darkblue{
+    background-color: #0d2481;
+}
+
+.yellow{
+    background-color: #ffd830;
+}
 /*
     HEADER
 */
@@ -144,15 +160,15 @@ h2{
 .top-header > *{
     width: 50%;
     align-items: center;
-    padding: 20px 5px;
+    padding: 14px 5px;
 }
 
-.left  ul > li, .right  ul > li{
+.left  ul > li, .right  ul > li, .left  ul > li > a, .right  ul > li > a{
     display: inline-block;
 }
 
-.left  ul > li, .left > .img_container, .right  ul > li{
-    padding: 0 15px;
+.left  ul a, .left > .img_container, .right  ul a{
+    padding: 6px 20px;
 }
 
 .top-header ul{
@@ -226,13 +242,12 @@ main h2{
     margin-bottom: 50px;
 }
 
-
 main .input-box input{
     margin: 3px;
 }
 
-main .input-box > span:nth-child(2){
-    margin-left: 20px;
+main .input-box span:last-child{
+    margin-left: 30px;
 }
 
 main .my_row{
@@ -366,7 +381,6 @@ main .my_row > .my_col_1-3 > p{
 
 .my_row_square > *{
     width: calc(100% / 3);
-    display: flex;
     flex-wrap: wrap;
 }
 
@@ -438,6 +452,7 @@ main > .background{
     color: black;
     text-decoration: none;
     font-size: small;
+    padding: 5px;
 }
 
 /*
@@ -490,6 +505,19 @@ footer .footer-top{
 .footer-bottom > span > i{
     padding: 0 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
     DEBUG
 */
