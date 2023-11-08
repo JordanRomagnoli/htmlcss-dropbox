@@ -31,23 +31,23 @@
     margin: 0 auto;
 }
 
-.my_col_1-3{
+.my_col_40{
     width: 40%;
 }
 
-.my_col_2-3{
+.my_col_60{
     width: 60%;
 }
 
-.my_col_1-4{
+.my_col_30{
     width: 30%;
 }
 
-.my_col_3-4{
+.my_col_70{
     width: 70%;
 }
 
-.my_col_1-5{
+.footer_col{
     width: calc(90% / 5);
 }
 
@@ -213,16 +213,16 @@ header > .bottom-header .jumbotron{
     font-weight: 800;
 }
 
-.bottom-header .my_col_1-3{
+.bottom-header .my_col_40{
     padding: 0 20px 10px 0;
     position: relative;
 }
 
-.bottom-header .my_col_1-3 > .button{
+.bottom-header .my_col_40 > .button{
     margin: 30px 0; 
 }
 
-.bottom-header .my_col_1-3 > i{
+.bottom-header .my_col_40 > i{
     position: absolute;
     left: 0;
     bottom: 75px;
@@ -230,7 +230,7 @@ header > .bottom-header .jumbotron{
     font-weight: bolder;
 }
 
-.my_col_2-3 > img{
+.my_col_60 > img{
     width: 100%;
 }
 
@@ -257,6 +257,10 @@ main h2{
 
 main .input-box input{
     margin: 3px;
+}
+
+main .input-box > span > input, main .input-box > span > label{
+    cursor: pointer;
 }
 
 main .input-box span:last-child{
@@ -348,7 +352,7 @@ main .my_row > .card{
     margin-bottom: 80px;
 }
 
-.horizontal_card > .card-bottom > .my_col_3-4{
+.horizontal_card > .card-bottom > .my_col_70{
     padding-top: 20px;
 }
 
@@ -356,33 +360,33 @@ main .my_row.big{
     margin: 180px 0;
 }
 
-main .my_row > .my_col_1-3{
+main .my_row > .my_col_40{
     padding: 50px 30px 0 30px;
 }
 
-main .my_row > .my_col_1-3 > h3{
+main .my_row > .my_col_40 > h3{
     margin-bottom: 20px;
 }
 
-main .my_row > .my_col_1-3 > p{
+main .my_row > .my_col_40 > p{
     margin-bottom: 30px;
 }
 
-.my_row_1-3{
+.card_box{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 180px;
 }
 
-.my_row_1-3 > .card{
+.card_box > .card{
     margin-bottom: 50px;
 }
 
-.my_row_1-3 > .card > img{
+.card_box > .card > img{
     width: 100%;
 }
 
-.my_row_1-3 > .card > h3{
+.card_box > .card > h3{
     font-size: 1.5em;
     margin-bottom: 20px;
 }
@@ -564,17 +568,17 @@ footer .footer-top{
     border: 1px dashed red;
 } */
 
-/* .my_row_1-3 > .card{
+/* .card_box > .card{
     border: 1px dashed black;
     margin-bottom: 50px;
 } */
 
-/* .my_row_1-3{
+/* .card_box{
     min-height: 800px;
     border: 1px dashed red;
 } */
 
-/* .debug .horizontal_card .my_col_3-4, .debug .horizontal_card .my_col_1-4{
+/* .debug .horizontal_card .my_col_70, .debug .horizontal_card .my_col_30{
     border: 1px dashed red;
 } */
 
@@ -623,10 +627,10 @@ footer .footer-top{
     border: 1px dashed red; 
 } */
 
-/* .debug .bottom-header .my_row > .my_col_1-3{
+/* .debug .bottom-header .my_row > .my_col_40{
     background-color: blue;
 } */
 
-/* .debug .bottom-header .my_row > .my_col_2-3{
+/* .debug .bottom-header .my_row > .my_col_60{
     background-color: red;
 } */
