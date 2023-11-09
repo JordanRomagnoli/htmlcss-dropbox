@@ -124,7 +124,6 @@ h2{
 
 .lightgreen{
     background-color: #a2d39b;
-    border: 20px solid #d1e9cd;
 }
 
 .orangered{
@@ -404,11 +403,21 @@ main .my_row > .my_col_40 > p{
 .my_row_square .square_1-2{
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .my_row_square .square_1-2 > img{
     width: 50%;
     filter: invert(100%);
+}
+
+.square_1-2{
+    transition: 1s;
+}
+
+.square_1-2:hover{
+    transform: scale(0.8);
+    border-radius: 40px;
 }
 
 .my_row_square > .corp_info{
@@ -423,6 +432,11 @@ main .my_row > .my_col_40 > p{
 .my_row_square > .corp_info > p{
     margin: 20px 0;
 }
+
+.my_row_square > div:first-child > .lightgreen{
+    border: 20px solid #d1e9cd;
+}
+
 
 main > .background{
     background-color: #b4d0e7;
@@ -522,8 +536,6 @@ footer .footer-top{
 .footer-bottom > span > i{
     padding: 0 5px;
 }
-
-
 
 
 
