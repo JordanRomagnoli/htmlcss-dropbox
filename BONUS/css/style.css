@@ -204,29 +204,28 @@ h2{
     background-color: #f2eee8;
 }
 
-.top-header .faq > .nav_faq{
+.top-header .info_box > .nav_info{
     display: none;
     position: absolute;
     top: 100%;
     min-height: 80px;
-    min-width: 100%;
+    min-width: calc(100% + 50%);
     background-color: #f2eee8;
-    padding: 20px 8px;
-    z-index: 2;
-}
+    padding: 30px 40px 30px 20px;
+} 
 
-.top-header .faq > .nav_faq li{
+.top-header .info_box > .nav_info li{
     display: block;
-}
+} 
 
-.top-header .nav_faq:hover{
+.top-header .nav_info:hover{
     display: block;
-}
+} 
 
-.top-header .faq:hover .nav_faq{
+.top-header .info_box:hover .nav_info{
     display: block;
     animation: opacity 0.2s ease-in-out;
-}
+} 
 
 @keyframes opacity{
     0%{
@@ -237,7 +236,7 @@ h2{
     }
 }
 
-.top-header .faq > .nav_faq li > a{
+.top-header .info_box > .nav_info li > a{
     display: inline-block;
     text-decoration: none;
     padding: 5px 0;
