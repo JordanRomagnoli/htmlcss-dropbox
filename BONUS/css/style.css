@@ -162,7 +162,7 @@ h2{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 3;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -170,15 +170,14 @@ h2{
 
 .top-header > *{
     align-items: center;
-    padding: 14px 5px;
+}
+
+.top-header > .left > .img_container, .top-header > .left a, .top-header > .right a{
+    padding: 20px 20px;
 }
 
 .left  ul > li, .right  ul > li, .left  ul > li > a, .right  ul > li > a{
     display: inline-block;
-}
-
-.left  ul a, .left > .img_container, .right  ul a{
-    padding: 6px 20px;
 }
 
 .top-header ul{
@@ -187,11 +186,67 @@ h2{
 
 .top-header .left > .img_container > img{
     height: 20px;
+    display: block;
 }
 
 .top-header .right{
     justify-content: flex-end;
 }
+
+
+/* BONUS */
+
+.top-header > .left > nav > ul > li, .top-header > .right > nav > ul > li{
+    position: relative;
+}
+
+.top-header > .left > nav > ul > li:hover, .top-header > .right > nav > ul > li:hover{
+    background-color: #f2eee8;
+}
+
+.top-header .faq > .nav_faq{
+    display: none;
+    position: absolute;
+    top: 100%;
+    min-height: 80px;
+    min-width: 100%;
+    background-color: #f2eee8;
+    padding: 20px 8px;
+    z-index: 2;
+}
+
+.top-header .faq > .nav_faq li{
+    display: block;
+}
+
+.top-header .nav_faq:hover{
+    display: block;
+}
+
+.top-header .faq:hover .nav_faq{
+    display: block;
+    animation: opacity 0.2s ease-in-out;
+}
+
+@keyframes opacity{
+    0%{
+        filter: opacity(0);
+    }
+    100%{
+        filter: opacity(1);
+    }
+}
+
+.top-header .faq > .nav_faq li > a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 0;
+    color: black;
+    font-size: 0.8em;
+}
+
+
+
 
 
 /* BOTTOM HEADER */
